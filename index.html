@@ -9,8 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <!-- Javascript -->
+
+  <!-- Font css -->
+  <link href="https://fonts.cdnfonts.com/css/jura" rel="stylesheet">
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -21,69 +24,183 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <!-- Font Awesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
   <title>CodeShare</title>
 
   <!-- CSS STYLING -->
   <style type="text/css">
-    .container-fluid {
-      padding: 2% 10%;
-      background-color: #202414;
+    .tab {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    
+
+    body {
+      font-family: Roboto;
+
     }
 
-   
+    @font-face {
+      font-family: Roboto;
+      src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+    }
 
-    body{
-      font-family:monospace;
-      
+
+    h1 {
+      color: #a7d129;
+      font-family: monospace;
+    }
+    h3{
+      font-weight: 900;
+    }
+
+    .navbar {
+      padding: 0 0 4.5rem;
+    }
+
+    .nav-item {
+      padding: 0 18px;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .dn-button {
+      margin: 5% 6% 8% 0%;
+    }
+
+    .feature-box {
+      padding: 5% 5%;
+      text-align: center;
+    }
+
+    header {
+      padding: 0 20px;
+    }
+
+    .secimg {
+      margin: 0% 0% 10% 0%;
+    }
+
+    #ML1 {
+      margin: 0% 0% 5% 0%;
+    }
+    .feature-text{
+      padding: 0% 0% 3% 0%;
+
     }
   </style>
 </head>
 
 <body>
-  <section>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark  ">
-        <a class="navbar-brand" href="" style="font-size:30px"> <b style="color:#A7CF2A">CODE </b><b> SHARE</b></a>
+  <section style="background-color:#171717">
+    <div class="container-fluid ">
+      <header class="sticky-top justify-content-center bg-dark">
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark ">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="" style="font-size:22px">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="" style="font-size:22px">Download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="" style="font-size:22px">Pricing</a>
-            </li>
+          <a class="navbar-brand d-flex align-items-center mb-md-0 me-md-auto text-light text-decoration-none"
+            style="font-size:30px">
+            <b style="color:#A7CF2A">CODE </b><b> SHARE</b>
+          </a>
+          <!-- 
+        <a class="navbar-brand" href="" "> </a> -->
 
-          </ul>
-        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " ; id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="font-size:22px">About Us</a>
+              </li>
 
+
+
+            </ul>
+          </div>
+      </header>
       </nav>
       <!-- <div class="container-fluid"> -->
-      <div class="row">
-        <div class="col-lg-5 ">
-          <h1 style="color:#A7CF2A"><br><br><br> Code Share </h1>
-          <h4 style="color:#DEFA8B">Share&nbsp     your&nbsp code&nbsp with &nbspanyone<br></h4>
-<b style="color: #3E4722; text-align: justify;">
-          Codeshare offers you to share your amazing codes with your Friends or collegues circle. It is best platform to communicate with other Developers.</b> <br>
-            <br>
-          <button onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.basementgeniusstudios.codeshare';" class="btn btn-outline-dark btn-lg" style="background-color: #A4C639;"><i class="fa-brands fa-android" ></i> Download</button> &nbsp&nbsp&nbsp<button onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.basementgeniusstudios.codeshare';" class="btn btn-outline-light btn-lg " style="border-color: #A4C639;"><i class="fa-brands fa-apple"></i> Download </button>
+      <div class="row" style="padding:  0 10%">
+        <div class="col" style="font-family: monospace;">
+          <h1 style="color:#A7CF2A; font-size:55px"><br><br> <b>Code Share </b><br> </h1>
+          <h4 style="color:#DEFA8B">Share&nbsp your&nbsp code&nbsp with &nbspanyone<br></h4>
+          <b style="color: #6C871D; text-justify: ; ">
+            Codeshare offers you to share your amazing codes with your Friends or collegues circle. It is best platform
+            to communicate with other Developers.</b> <br>
+          <br>
+          <button
+            onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.basementgeniusstudios.codeshare';"
+            class="btn btn-outline-dark btn-lg dn-button" style="background-color: #A4C639;"><i
+              class="fa-brands fa-android"></i> Download</button><button
+            onclick="window.location.href = 'https://play.google.com/store/apps/details?id=com.basementgeniusstudios.codeshare';"
+            class="btn btn-outline-light btn-lg dn-button" style="border-color: #A4C639;"><i
+              class="fa-brands fa-apple"></i> Download </button>
 
         </div>
-        <div class="col-lg-7">
-          <img src="Images/Start.png" alt="Screen" height="700" width="1000" align="top"><br>  <br><div>
+        <div class="col-lg-7 d-flex justify-content-center">
+          <img src="Images/Start.png" alt="Screen" height="700" width="1000" align="top"><br> <br>
+          <div>
           </div>
         </div>
       </div>
     </div>
-<!-- </div> -->
+    <!-- </div> -->
+  </section>
+  <section id="features">
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <img src="Images/easyjpg.jpg" class="secimg" height="100px" width="100px">
+
+        <h3 class="feature-text">Easy To Use</h3>
+        <p>So easy to use, even non-tech person can also use it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4 ">
+        <img src="Images/Security.jpg" class="secimg" height="100px" width="100px">
+        <h3 class="feature-text">Secure</h3>
+        <p>
+          Data is tranferred Surely and Confidenciely without any Interface within two users
+        </p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <img src="Images/Multi-Language.jpg" class="secimg" id="ML1" height="120px" width="120px">
+        <h3 class="feature-text">Multi-Language Supported</h3>
+        <p>Supports different programming Languages like Python, C++,C etc. </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+      <div></div>
+    </div>
+
   </section>
 </body>
 
