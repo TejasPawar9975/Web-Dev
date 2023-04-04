@@ -1,5 +1,5 @@
 # CodeShare
-##Code Sharing Platform For Everyone
+# Code Sharing Platform For Everyone
 
 Code Share focuses on simplicity sharing and reviewing code is now easy with Code Share. Code in your native language and share easily with your friends and teacher.
 An enthusiastic group of problem solvers continually working to create a code environment to solve code-sharing problems.
