@@ -1,3 +1,66 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Temp extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(15.0),
+      width: 500,
+      height: 300,
+      child: Stack(children: [
+        Align(
+          alignment: Alignment.centerRight,
+          child: Image.asset("assets/temp.jpeg"),
+        ),
+        SizedBox(
+          width: 150,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Didn't find what you are looking for",
+                style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red),
+              ),
+              SizedBox(height: 30),
+              Text(
+                "Suggest Something and \nwe will look into into it ",
+                style: TextStyle(fontSize: 18, color: Colors.grey),
+              ),
+              SizedBox(height: 30),
+              GestureDetector(
+                child: Container(
+                  child: Text(
+                    "BTN TXT",
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.green)),
+                  padding: EdgeInsets.all(15.0),
+                ),
+              )
+            ],
+          ),
+        ),
+      ]),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:js';
