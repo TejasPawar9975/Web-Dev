@@ -1,3 +1,62 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'dart:js';
+import 'package:flutter/material.dart';
+import 'package:test1/Models/Function.dart';
+import 'package:test1/Widgets/widgets.dart';
+import 'package:test1/Models/Teja.dart';
+
+import 'Pages/Homepage.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Myhomepage(),
+    ),
+  );
+}
+
+class Myhomepage extends StatefulWidget {
+  const Myhomepage({Key? key}) : super(key: key);
+
+  @override
+  State<Myhomepage> createState() => _MyhomepageState();
+}
+
+class _MyhomepageState extends State<Myhomepage> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatefulWidget {
+  const Home({super.key});
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Temp(),
+    );
+  }
+}
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 
